@@ -99,8 +99,9 @@ img {
 .profile-pic {
   border-radius: 50%;
   width: 25rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  border: .3rem solid var(--main-blue);
 }
 
 @media (max-width: 28.75em) {
