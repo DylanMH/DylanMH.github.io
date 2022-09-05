@@ -188,9 +188,16 @@ img {
   border-radius: 2px;
 }
 
+.project:hover {
+  border-radius: 50px;
+  background-color: var(--main-blue);
+  transform: scale(110%);
+  transition: all .5s;
+}
+
 .code {
   color: var(--main-gray);
-  transition: color 0.3s ease-out;
+  transition: color .5s ease-out;
 }
 
 .project:hover .code {
