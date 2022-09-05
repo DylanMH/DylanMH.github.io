@@ -123,6 +123,7 @@ img {
 
 .nav-list a:hover {
   background: var(--main-blue);
+  transition: .4s ease-in-out;
 }
 
 .welcome-section {
@@ -185,7 +186,7 @@ img {
 .project {
   background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 15px;
 }
 
 .project:hover {
@@ -208,6 +209,13 @@ img {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-image:hover {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .project-title {
@@ -218,23 +226,24 @@ img {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 2px;
+  border-radius: 15px;
 }
 
 .btn-show-all {
   font-size: 2rem;
   background: var(--main-gray);
-  transition: background 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .btn-show-all:hover {
   background: var(--main-green);
+  border-radius: 50rem;
 }
 
-.btn-show-all < i {
+.btn-show-all  i {
   margin-left: 10px;
   transform: translateX(0);
-  transition: transform 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .contact-section {
@@ -253,9 +262,7 @@ img {
   font-size: 6rem;
 }
 
-@media (max-width: 28.75em) {
-  font-size: 4rem;
-}
+
 
 .contact-section-header > p {
   font-style: italic;
@@ -274,10 +281,14 @@ img {
   color: var(--main-white);
 }
 
+.contact-links a:hover {
+  color: var(--main-green)
+}
+
 .contact-details {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
+  transition: 0.5s ease-in-out;
 }
 
 .contact-details:hover {
